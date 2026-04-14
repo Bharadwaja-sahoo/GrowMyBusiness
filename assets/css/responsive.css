@@ -1,0 +1,1175 @@
+/* ====================== RESPONSIVE SETTINGS ====================== */
+
+/* =========== All page Responsive =============== */
+
+@media all and (min-width: 280px) {
+    /* ======== index.html ======== */
+    #Optimization .big-h1 h1 {
+        font-size: 21.99vw;
+    }
+}
+
+@media all and (min-width: 768px) {
+    /* ======== index.html ======== */
+    .p-active {
+        width: 37% !important;
+    }
+    .p-width {
+        width: 37% !important;
+    }
+    #Case-Study .col-lg-3 {
+        width: 21%;
+        transition: 0.9s ease;
+    }
+    #Optimization .row>* {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    #Optimization .big-h1 h1 {
+        font-size: 21.4vw;
+    }
+    #Testimonials .col-lg-8 {
+        width: 63%;
+    }
+    #Testimonials .col-lg-4 {
+        width: 37%;
+    }
+}
+
+@media all and (min-width: 991px) {
+    /* ======== index.html ======== */
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: end;
+        margin-right: 50px;
+    }
+    #facility .logoipsum .col-lg-2 {
+        width: 25%;
+    }
+    #facility .position-absolute .col-lg-4 {
+        width: 31%;
+    }
+    #Gallery h2 {
+        padding: 0px 60px 0px 0px;
+    }
+    #Gallery .Gallery-p {
+        padding: 0px 60px 0px 0px;
+    }
+}
+
+@media all and (min-width: 991px) and (max-width: 1440px) {
+    /* ======== index.html ======== */
+    .Gallery_Slider .slick-slide {
+        width: 415px !important;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    /* ======== index.html ======== */
+    #facility .logoipsum .col-lg-2 {
+        width: 19%;
+    }
+    #facility .position-absolute .col-lg-4 {
+        width: 33%;
+    }
+    #facility .position-absolute .flex-column {
+        width: 75%;
+    }
+    #facility .position-absolute {
+        left: 5%;
+    }
+    #Optimization .col-lg-3 div:first-child {
+        padding-top: 400px;
+    }
+    #Testimonials .col-lg-8 {
+        width: 65%;
+    }
+    #Testimonials .col-lg-4 {
+        width: 35%;
+    }
+    #Testimonials .col-lg-8 .gap-3 {
+        padding: 79px 170px 79px 70px;
+    }
+}
+
+@media all and (min-width: 1440px) {
+    /* ======== index.html ======== */
+    #Optimization .big-h1 h1 {
+        -webkit-text-stroke-width: 4px;
+        font-size: 21.4vw;
+        left: 0%;
+    }
+}
+
+@media all and (max-width: 1280px) {
+    /* ======== index.html ======== */
+    #facility .facility-circle h2 {
+        padding: 10px 45px;
+        left: 4%;
+    }
+    #facility .position-absolute {
+        bottom: 650px;
+    }
+    #facility .position-absolute .flex-column {
+        width: 78%;
+    }
+    #facility .col-lg-5 p {
+        color: #fff;
+        padding: 153px 90px 433px 0px;
+    }
+    #Optimization .col-lg-3 div:first-child {
+        margin-bottom: 110px;
+        padding-top: 120px;
+    }
+    #Experiences .Exp-image h1 {
+        left: 44%;
+    }
+    #Subscribe h3 {
+        padding: 0px 220px 30px 220px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    /* ===== 02. Global Style ===== */
+    h1 {
+        font-size: 65px;
+        font-weight: 800;
+        line-height: 71px;
+    }
+    /* ======== index.html ======== */
+    #hero .col-lg-8 .hero-content {
+        top: 23%;
+    }
+    #hero .col-lg-8 .hero-content img {
+        width: 38px;
+    }
+    #facility .position-absolute .flex-column {
+        width: 95%;
+        padding: 30px 30px 40px 20px;
+    }
+    #facility .position-absolute {
+        left: 6%;
+        top: 28%;
+    }
+    #facility .col-lg-5 p {
+        color: #fff;
+        padding: 115px 50px 25px 0px;
+    }
+    #facility .facility-circle h2 {
+        padding: 11px 43px;
+        left: 4%;
+        top: 9%;
+    }
+    #Experiences .Exp-image h1 {
+        left: 43%;
+    }
+    #Subscribe h3 {
+        padding: 0px 150px 30px 150px;
+    }
+}
+
+@media all and (max-width: 991px) {
+    /* ===== 02. Global Style ===== */
+    .container {
+        max-width: 959px;
+    }
+    h1 {
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 66px;
+    }
+    /* ======== index.html ======== */
+    .open-aside {
+        display: block;
+    }
+    .join-btn {
+        display: none;
+    }
+    .nav-logo img {
+        height: 50px;
+    }
+    .side-nav-logo {
+        padding-bottom: 20px;
+    }
+    #hero .col-lg-8 .hero-content p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    #hero .col-lg-8 .hero-content a {
+        font-size: 14px;
+    }
+    #hero .col-lg-4 hr {
+        left: -10px;
+    }
+    #facility .facility-circle h2 {
+        padding: 11px 39px;
+        left: 3%;
+        top: 10%;
+    }
+    #facility .col-lg-5 p {
+        color: #fff;
+        padding: 100px 20px 22px 0px;
+    }
+    #facility .logoipsum div img {
+        width: 140px;
+    }
+    #Case-Study h1 {
+        padding: 0px 100px;
+    }
+    .Case-Study-p {
+        padding: 30px 100px;
+    }
+    #Case-Study .content p {
+        width: 100%;
+    }
+    #Optimization .col-lg-3 div:first-child {
+        top: 14%;
+        left: -12%;
+    }
+    #Offer .col-lg-3 {
+        margin: 10px 0px;
+    }
+    #Plan .Plan-p {
+        padding: 10px 100px 20px 100px;
+    }
+    #Testimonials .Test-P {
+        padding: 20px 100px 25px 100px;
+    }
+    #Testimonials .col-lg-8 .gap-3 {
+        padding: 50px 100px 50px 50px;
+    }
+    #Subscribe h3 {
+        padding: 0px 110px 30px 110px;
+    }
+    /* ======== about.html ======== */
+    #sign p {
+        padding: 0px 100px 0px 100px;
+    }
+    /* ======== services.html ======== */
+    #Services .diractions {
+        flex-direction: column;
+    }
+    /* ======== contact.html ======== */
+    #Leave_Us .Leave_form {
+        width: 60%;
+    }
+    /* ======== team.html ======== */
+    #Our_Team .Team-p {
+        padding: 15px 100px 25px 100px;
+    }
+    #Our_Team h2 {
+        padding: 0px 100px;
+    }
+    /* ======== coming.html ======== */
+    #coming h1 {
+        padding: 0px 200px;
+    }
+    #coming .mt-3 {
+        padding: 0px 150px;
+    }
+}
+
+@media all and (max-width: 820px) {
+    /* ======== index.html ======== */
+    #facility .facility-circle h2 {
+        padding: 10px 30px;
+        top: 8%;
+        left: 5%;
+    }
+    #facility .col-lg-5 p {
+        padding: 85px 0px 25px 0px;
+    }
+    #facility .position-absolute {
+        left: 0%;
+        top: 28%;
+    }
+    #facility .position-absolute .flex-column {
+        padding: 20px 20px 30px 20px;
+    }
+    #Case-Study .content h4 {
+        padding: 12px 34px;
+    }
+    #Case-Study .content p {
+        width: 75%;
+    }
+    #Offer .flex-column {
+        padding: 0px 10px;
+    }
+    #Experiences .Exp-image h1 {
+        left: 40%;
+    }
+    #Talk .row {
+        margin: 0px auto;
+    }
+}
+
+@media all and (max-width: 768px) {
+    /* ===== 02. Global Style ===== */
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 46px;
+    }
+    h2 {
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+    h3 {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+    h4 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+    h5 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    h6 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    button {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        padding: 10px 35px;
+    }
+    a {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+    .h6-color {
+        padding-bottom: 15px;
+    }
+    .hover1 {
+        padding: 8px 30px;
+    }
+    .hover2 {
+        padding: 8px 30px;
+    }
+    #Succes-box2 {
+        width: 80%;
+        right: 10%;
+    }
+    #Succes-box {
+        width: 80%;
+        right: 10%;
+    }
+    /* ======== index.html ======== */
+    .nav-logo img {
+        height: 50px;
+    }
+    #hero .col-lg-8 figure {
+        top: 11.1%;
+        right: 4%;
+    }
+    #hero .col-lg-8 .banner {
+        width: 100%;
+    }
+    #hero .banner-content .position-absolute {
+        padding: 0px 30px 0px 0px;
+    }
+    #hero {
+        padding: 50px 0px 66px 0px;
+    }
+    #hero .col-lg-4 img {
+        width: 82px;
+    }
+    #hero .col-lg-4 hr {
+        left: 0px;
+    }
+    #rating {
+        padding: 70px 0px;
+    }
+    #rating .col-lg-4 .flex-column {
+        padding: 45px 20px;
+    }
+    #rating .col-lg-4 h1 {
+        font-size: 42px;
+        line-height: 48px;
+    }
+    #facility .position-absolute .flex-column {
+        width: 85%;
+    }
+    #facility .logoipsum {
+        padding: 70px 0px;
+    }
+    #facility .position-absolute {
+        top: 24%;
+    }
+    #facility .facility-circle h2 {
+        top: 8%;
+        left: 5%;
+        padding: 10px 28px;
+    }
+    #facility .position-absolute img {
+        width: 90px;
+    }
+    #facility {
+        padding: 70px 0px 0px 0px;
+    }
+    #facility .logoipsum .col-lg-2 a {
+        padding: 20px 0px;
+    }
+    #facility .logoipsum .col-lg-2 div:first-child {
+        padding: 20px 5px;
+    }
+    #Case-Study h1 {
+        padding: 2px 70px;
+    }
+    .Case-Study-p {
+        padding: 10px 50px 20px 50px;
+    }
+    #Case-Study {
+        padding-bottom: 70px;
+    }
+    .Case-Study_bg {
+        padding: 70px 0px !important;
+    }
+    #Offer {
+        padding: 70px 0px;
+    }
+    #Offer .row:first-child {
+        padding-bottom: 70px;
+    }
+    #Offer .social img {
+        width: 90px;
+    }
+    #Experiences {
+        padding: 70px 0px;
+    }
+    #Experiences .number {
+        width: 41px;
+        height: 41px;
+        font-size: 27px;
+    }
+    #Experiences .d-flex {
+        margin-bottom: 10px;
+    }
+    #Plan .plan-Card {
+        padding: 25px 15px;
+    }
+    #Plan {
+        padding: 70px 0px;
+    }
+    #Plan .Plan-p {
+        padding: 10px 50px 20px 50px;
+    }
+    #Plan h1 {
+        padding: 0px 50px;
+    }
+    #Gallery {
+        padding-bottom: 70px;
+    }
+    #Gallery .row {
+        padding-bottom: 70px;
+    }
+    #Gallery hr {
+        margin-bottom: 70px;
+    }
+    #Professionals {
+        padding: 70px 0px;
+    }
+    #Testimonials .Test-P {
+        padding: 20px 100px 25px 100px;
+    }
+    #Testimonials .col-lg-8 .gap-3 {
+        padding: 50px 70px 50px 50px;
+    }
+    #Testimonials {
+        padding: 70px 0px;
+    }
+    #Testimonials h2 {
+        padding: 0px 70px;
+    }
+    #Talk .row {
+        margin: 0px auto;
+        padding: 50px 40px 50px 40px;
+    }
+    #Talk .row {
+        top: 120px;
+    }
+    #Subscribe h3 {
+        padding: 0px 90px 30px 90px;
+    }
+    #Subscribe {
+        padding: 70px 0px;
+    }
+    #Subscribe input {
+        width: 60%;
+    }
+    #Subscribe button {
+        right: 22%;
+    }
+    #Questions .container {
+        top: 70px;
+    }
+    #Questions .accordion-button {
+        gap: 30px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .FAQ_Questions {
+        padding: 0px 0px 70px 0px !important;
+    }
+    footer {
+        padding-top: 70px;
+    }
+    footer img {
+        width: 170px;
+    }
+    /* ======== about.html ======== */
+    #sign p {
+        padding: 0px 50px 0px 50px;
+    }
+    #sign .position-relative {
+        top: -70px;
+    }
+    .about_hero_space {
+        padding-bottom: 150px !important;
+    }
+    /* ======== services.html ======== */
+    #Services {
+        padding: 70px 0px;
+    }
+    #Services .text-start img {
+        width: 80px;
+    }
+    #Services h2 {
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
+    .Services-p {
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
+    /* ======== contact.html ======== */
+    #Leave_Us .position-absolute {
+        top: 250px;
+    }
+    #Leave_Us .Leave_form {
+        width: 70%;
+    }
+    #Some_Question {
+        padding: 260px 0px 100px 0px;
+    }
+    /* ======== our_Blog.html ======== */
+    #Blogs {
+        padding: 70px 0px;
+    }
+    /* ======== Blog_Detail.html ======== */
+    #Latest_Posts {
+        padding: 70px 0px;
+    }
+    #Latest_Posts h5 {
+        color: #212322;
+        padding: 0px 0px 0px 0px;
+    }
+    /* ======== team.html ======== */
+    #Our_Team {
+        padding: 70px 0px;
+    }
+    #Our_Team .Team-p {
+        padding: 15px 50px 20px 50px;
+    }
+    #Our_Team h2 {
+        padding: 0px 50px;
+    }
+    /* ======== 404.html ======== */
+    #Not_Found .position-relative {
+        bottom: 50px;
+    }
+    #Not_Found i {
+        font-size: 23px;
+    }
+    /* ======== coming.html ======== */
+    #coming h1 {
+        padding: 0px 100px;
+    }
+    #coming .mt-3 {
+        padding: 0px 50px;
+    }
+    #countdown ul {
+        gap: 25px;
+    }
+    #coming span {
+        top: 70px;
+    }
+    #content_2 h2 {
+        padding: 50px 0px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    /* ======== index.html ======== */
+    #hero .col-lg-4 .gap-4 {
+        justify-content: center;
+    }
+    #hero .col-lg-4 hr {
+        top: 60px;
+        left: 0px;
+    }
+    #hero .col-lg-4 .gap-4 {
+        padding-top: 125px;
+    }
+    #hero .col-lg-4 hr {
+        width: 110px;
+    }
+    #hero .line {
+        justify-content: center;
+    }
+    #rating .col-lg-4 {
+        margin-bottom: 20px;
+    }
+    #facility .facility-circle img {
+        display: none;
+    }
+    #facility .col-lg-5 p {
+        padding: 10px 50px;
+        text-align: center;
+    }
+    #facility .facility-circle h2 {
+        text-align: center;
+        position: unset;
+        background: #E6B938;
+        width: 100%;
+    }
+    #facility .facility-circle {
+        background: #E6B938;
+        padding: 50px 40px;
+        border-radius: 20px;
+    }
+    #facility .col-lg-5 {
+        margin-top: 30px;
+    }
+    #facility .position-absolute {
+        position: unset !important;
+        padding-top: 70px;
+        gap: 30px;
+    }
+    #facility .position-absolute .col-lg-4 {
+        justify-content: center !important;
+    }
+    #Case-Study .row {
+        gap: 25px;
+    }
+    #Case-Study .col-lg-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #Optimization .col-lg-3 div:first-child {
+        position: unset;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 30px;
+        margin-bottom: 0px;
+    }
+    #Optimization .col-0 h1 {
+        bottom: 49%;
+    }
+    #Optimization .col-lg-3 div:first-child p {
+        padding: 0px 30px;
+    }
+    #Optimization {
+        padding: 70px 0px;
+    }
+    #Optimization .big-h1 h1 {
+        top: 7%;
+    }
+    #Offer .row:first-child .gap-3 {
+        text-align: center;
+        padding-top: 25px;
+    }
+    #Experiences .Exp-image h1 {
+        top: 48%;
+        left: 34%;
+    }
+    #Experiences .row {
+        display: flex;
+        gap: 30px;
+    }
+    #Plan .plan-Card {
+        padding: 35px 30px;
+    }
+    #Gallery h2 {
+        padding: 0px 80px 0px 80px;
+    }
+    #Gallery .Gallery-p {
+        padding: 0px;
+    }
+    #Questions .container {
+        position: unset;
+    }
+    #Questions {
+        padding: 70px 0px;
+    }
+    #Talk .row {
+        position: unset;
+    }
+    #Talk .container {
+        padding-bottom: 70px;
+    }
+}
+
+@media all and (max-width: 540px) {
+    /* ======== index.html ======== */
+    #rating {
+        padding: 70px 0px 25px 0px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    /* ===== 02. Global Style ===== */
+    h1 {
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+    h2 {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    h4 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+    h5 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    h6 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    button {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        padding: 10px 35px;
+    }
+    a {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+    .hover1 {
+        padding: 7px 25px;
+    }
+    .hover2 {
+        padding: 7px 25px;
+    }
+    #Succes-box2 {
+        width: 90%;
+        right: 5%;
+        padding: 70px 0;
+    }
+    #Succes-box {
+        width: 90%;
+        right: 5%;
+        padding: 70px 0;
+    }
+    /* ======== index.html ======== */
+    .nav-logo img {
+        height: 50px;
+    }
+    aside .fa-xmark {
+        font-size: 20px;
+    }
+    .open-aside {
+        padding: 8px 14px;
+        font-size: 22px;
+    }
+    #hero .mobile-reponsive {
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    #hero p {
+        color: #fff;
+    }
+    #hero h4 {
+        color: #fff;
+    }
+    #hero .col-lg-8 .hero-content {
+        width: 100%;
+        position: unset;
+    }
+    #hero .col-lg-8 .hero-content .gap-2 {
+        position: unset;
+        align-items: center;
+        justify-content: center;
+        margin-top: 42px;
+    }
+    #hero .col-lg-8 .hero-content a {
+        color: #fff;
+    }
+    #rating {
+        padding: 0px 0px 25px 0px;
+    }
+    #facility .facility-circle {
+        padding: 50px 0px;
+    }
+    #facility .col-lg-5 {
+        top: 13%;
+    }
+    #facility .col-lg-5 p {
+        padding: 10px 20px;
+    }
+    #facility .position-absolute {
+        padding-top: 50px;
+    }
+    #facility .logoipsum {
+        padding: 50px 0px;
+    }
+    #facility .position-absolute .flex-column {
+        width: 95%;
+    }
+    #facility {
+        padding: 50px 0px 0px 0px;
+    }
+    #facility .logoipsum .col-lg-2 div:first-child {
+        padding: 30px 5px;
+    }
+    #facility .about_logoipsum .col-lg-2 div:first-child {
+        padding: 0px 5px;
+    }
+    #Case-Study h1 {
+        padding: 2px 0px;
+    }
+    .Case-Study-p {
+        padding: 15px 0px;
+    }
+    #Case-Study {
+        padding-bottom: 50px;
+    }
+    #Case-Study .row {
+        gap: 20px;
+    }
+    #Optimization .col-0 h1 {
+        left: 1%;
+        width: 68%;
+        top: 33%;
+    }
+    .Case-Study_bg {
+        padding: 50px 0px !important;
+    }
+    #Optimization {
+        padding: 50px 0px;
+    }
+    #Optimization .big-h1 h1 {
+        -webkit-text-stroke-width: 1px;
+    }
+    #Optimization .col-lg-3 div:first-child p {
+        padding: 0px 0px;
+    }
+    #Offer {
+        padding: 50px 0px;
+    }
+    #Offer .row:first-child {
+        padding-bottom: 50px;
+    }
+    #Offer .gap-3 {
+        text-align: center;
+    }
+    #Experiences {
+        padding: 50px 0px;
+    }
+    #Experiences .row {
+        gap: 20px;
+    }
+    #Experiences .number {
+        width: 36px;
+        height: 36px;
+        font-size: 22px;
+    }
+    #Experiences .Exp-image h1 {
+        top: 40%;
+        left: 47%;
+    }
+    #Experiences .d-flex p {
+        color: #fff;
+        padding: 5px 15px 15px 0px;
+    }
+    #Plan .Plan-p {
+        padding: 10px 0px 20px 0px;
+    }
+    #Plan h1 {
+        padding: 0px 0px;
+    }
+    #Plan {
+        padding: 50px 0px;
+    }
+    .Gallery_Slider .slick-slide {
+        margin: 0px 10px;
+    }
+    .G_Color {
+        height: 250px;
+    }
+    #Gallery {
+        padding-bottom: 50px;
+    }
+    #Gallery .row {
+        padding-bottom: 50px;
+    }
+    #Gallery hr {
+        margin-bottom: 50px;
+    }
+    #Gallery h2 {
+        padding: 0px;
+    }
+    .G_S_Content {
+        bottom: 10px;
+        padding: 5px 10px;
+    }
+    #Professionals {
+        padding: 50px 0px;
+    }
+    .Professionals_Slider figure img {
+        width: 70%;
+    }
+    .Professionals_Slider figure {
+        display: flex;
+        justify-content: center;
+    }
+    #Testimonials .Test-P {
+        padding: 15px 0px 20px 0px;
+    }
+    #Testimonials .col-lg-8 .gap-3 {
+        padding: 30px 50px 30px 30px;
+    }
+    #Testimonials {
+        padding: 50px 0px;
+    }
+    #Testimonials h2 {
+        padding: 0px 0px;
+    }
+    #Questions {
+        padding: 50px 0px;
+    }
+    #Talk .row {
+        margin: 0px auto;
+        padding: 40px 30px 10px 30px;
+    }
+    #Subscribe h3 {
+        padding: 0px 20px 20px 20px;
+    }
+    #Subscribe {
+        padding: 50px 0px;
+    }
+    #Subscribe input {
+        width: 80%;
+    }
+    #Subscribe button {
+        right: 13%;
+    }
+    footer {
+        padding-top: 50px;
+    }
+    /* ======== about.html ======== */
+    #sign p {
+        padding: 0px;
+    }
+    #sign .position-relative {
+        top: -50px;
+    }
+    .about_hero_space {
+        padding-bottom: 100px !important;
+    }
+    #about_hero {
+        padding: 30px 0px 50px 0px;
+    }
+    /* ======== services.html ======== */
+    #Services {
+        padding: 50px 0px;
+    }
+    /* ======== contact.html ======== */
+    #Leave_Us {
+        background: #fff;
+    }
+    #Leave_Us .position-absolute {
+        position: static !important;
+    }
+    #Leave_Us .Leave_form {
+        width: 95%;
+        margin-top: 50px;
+    }
+    #Some_Question {
+        padding: 50px 0px 50px 0px;
+    }
+    /* ======== our_Blog.html ======== */
+    #Blogs {
+        padding: 50px 0px;
+    }
+    /* ======== blog_Detail.html ======== */
+    #Latest_Posts {
+        padding: 50px 0px;
+    }
+    /* ======== team.html ======== */
+    #Our_Team {
+        padding: 50px 0px;
+    }
+    #Our_Team .Team-p {
+        padding: 15px 0px 20px 0px;
+    }
+    #Our_Team h2 {
+        padding: 0px 0px;
+    }
+    /* ======== 404.html ======== */
+    #Not_Found .position-relative {
+        bottom: 20px;
+        padding-bottom: 30px;
+    }
+    #Not_Found .position-relative .found {
+        width: 70%;
+    }
+    #Not_Found .pb-2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #Not_Found i {
+        font-size: 20px;
+    }
+    /* ======== coming.html ======== */
+    #coming .pb-2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #coming i {
+        font-size: 20px;
+    }
+    #coming h1 {
+        padding: 0px;
+    }
+    #coming .mt-3 {
+        padding: 0px;
+    }
+    #countdown ul {
+        gap: 10px;
+    }
+    #coming span {
+        -webkit-text-stroke-width: 2px;
+        font-size: 38vw;
+        top: 48px;
+    }
+}
+
+@media all and (max-width: 430px) {
+    /* ======== index.html ======== */
+    /* #hero .col-lg-8 .hero-content .gap-2 {
+        right: 3%;
+        margin-top: 25px;
+    }
+    #hero .mobile-reponsive {
+        top: 350px;
+       
+    } */
+    #facility .facility-circle h2 {
+        top: 7%;
+    }
+    #facility .col-lg-5 {
+        top: 11%;
+    }
+    #facility .col-lg-5 p {
+        padding: 10px 34px;
+    }
+    #Optimization {
+        padding: 50px 0px;
+    }
+    #Optimization .big-h1 h1 {
+        -webkit-text-stroke-width: 1px;
+    }
+    #Optimization .col-0 h1 {
+        left: 2%;
+        top: 36%;
+        width: 46%;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    #Optimization .col-lg-3 div:first-child {
+        padding-top: 20px;
+    }
+}
+
+@media all and (max-width: 360px) {
+    /* ======== index.html ======== */
+    #facility .facility-circle h2 {
+        top: 5%;
+    }
+    #facility .col-lg-5 {
+        top: 9%;
+    }
+    #facility .col-lg-5 p {
+        padding: 10px 20px;
+    }
+    #Plan .plan-Card {
+        padding: 25px 15px;
+    }
+    #Testimonials .col-lg-8 .gap-3 {
+        padding: 25px 30px 25px 25px;
+    }
+    #Talk .row {
+        padding: 30px 15px 0px 15px;
+    }
+    /* ======== 404.html ======== */
+    #Not_Found .position-relative {
+        bottom: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #Not_Found .position-relative .found {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 320px) {
+    /* ======== index.html ======== */
+    #facility .facility-circle h2 {
+        top: 3%;
+    }
+    #facility .col-lg-5 {
+        top: 8%;
+    }
+    #facility .col-lg-5 p {
+        padding: 10px 20px;
+    }
+}
+
+@media all and (max-width: 280px) {
+    /* ======== index.html ======== */
+    #hero .banner-content .p-0 {
+        top: 200%;
+    }
+}
