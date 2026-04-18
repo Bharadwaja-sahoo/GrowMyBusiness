@@ -90,7 +90,7 @@ License URI:
   /* Default color used for the majority of the text content across the entire website */
   --heading-color: #1e293b;
   /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #E6B938;
+  --accent-color: #fea764;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -643,7 +643,7 @@ span {
     width: 0;
     height: 100%;
     transition: all 0.9s ease;
-    background-color: #E6B938;
+    background-color: #fea764;
     z-index: -1;
     top: 0;
     left: 0;
@@ -651,7 +651,7 @@ span {
 
 .hover5:hover::before {
     width: 0%;
-    background-color: #E6B938;
+    background-color: #fea764;
     right: 0;
 }
 
@@ -661,7 +661,7 @@ span {
     width: 0;
     height: 100%;
     transition: all 0.6s ease;
-    background-color: #E6B938;
+    background-color: #fea764;
     z-index: -1;
     bottom: 0;
     right: 0;
@@ -669,7 +669,7 @@ span {
 
 .hover5:hover::after {
     width: 100%;
-    background-color: #E6B938;
+    background-color: #fea764;
     left: 0;
 }
 
@@ -1446,7 +1446,7 @@ aside li {
 }
 
 .plan-Card .mt-0 p {
-    background-color: #E6B938;
+    background-color: #fea764;
     padding: 6px 20px;
     border-radius: 20px;
 }
@@ -1486,7 +1486,7 @@ aside li {
 }
 
 #Plan .col-lg-4:nth-child(2) .plan-Card a {
-    border: 1px solid #E6B938;
+    border: 1px solid #fea764;
     color: #fff;
 }
 /* Wrapper spacing */
@@ -1679,7 +1679,7 @@ aside li {
 }
 
 #Experiences .number {
-    background-color: #E6B938;
+    background-color: #fea764;
     width: 49px;
     height: 47px;
     border-radius: 50px;
@@ -1706,7 +1706,7 @@ aside li {
 
 #Experiences .Exp-image figure {
     clip-path: circle(50%);
-    background-color: #E6B938;
+    background-color: #fea764;
     position: relative;
 }
 
@@ -1739,7 +1739,7 @@ aside li {
     background: url("../images/bg/sco_bg.webp");
     background-size: cover;
     background-position: center;
-    background-color: #E6B938;
+    background-color: #fea764;
     position: relative;
 }
 
