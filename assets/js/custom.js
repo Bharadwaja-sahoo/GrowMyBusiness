@@ -393,6 +393,5 @@ changeImageElementsLogo.forEach((element, index) => {
                 element.src = 'assets/images/logoipsum/logoipsum_Dark_5.svg';
                 break;
         }
-
     });
 });

@@ -738,7 +738,7 @@ aside .fa-xmark {
 }
 
 .nav-link:focus {
-    color: #fff !important;
+    color: #000 !important;
 }
 
 .dropdown-item:focus {
@@ -1536,55 +1536,81 @@ aside li {
 
 .demo-section {
     padding: 0px 0px 80px 0px;
-    background-color: #fff;
+    background: #fff;
 }
 
 /* Card */
 .demo-card {
-    background: #fff;
+    background: #f7faff;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 14px;
     height: 100%;
     transition: 0.3s;
 }
 
 .demo-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
 }
 
-/* Heading */
 .demo-card h5 {
     font-weight: 600;
     margin-bottom: 15px;
 }
 
-/* Before After */
+/* Before After Layout */
 .before-after-img {
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 
-.before-after-img div {
+/* Image Box */
+.img-box {
     position: relative;
     flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
-/* Image */
-.before-after-img img {
-    border-radius: 8px;
+.img-box img {
+    width: 100%;
+    transition: 0.4s;
+}
+
+/* Hover Zoom */
+.img-box:hover img {
+    transform: scale(1.08);
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.img-box:hover .overlay {
+    opacity: 1;
 }
 
 /* Tags */
 .tag {
     position: absolute;
-    top: 8px;
-    left: 8px;
+    top: 10px;
+    left: 10px;
     background: #dc3545;
     color: #fff;
     font-size: 12px;
-    padding: 3px 8px;
-    border-radius: 4px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    z-index: 2;
 }
 
 .tag.after {
@@ -1592,13 +1618,37 @@ aside li {
 }
 
 /* Video */
+.video-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 .video-box video {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
+}
+
+/* Play Button */
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #E6B938;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 /* Responsive */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .before-after-img {
         flex-direction: column;
     }
@@ -1661,10 +1711,10 @@ aside li {
 }
 
 #Experiences .Exp-image img {
-    width: 58%;
+    width: 60%;
     position: relative;
-    top: 2%;
-    left: 10%;
+    top: 0%;
+    left: 20%;
 }
 
 #Experiences .Exp-image h1 {
@@ -1695,15 +1745,14 @@ aside li {
 
 #Optimization .big-h1 h1 {
     color: transparent;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
-    font-size: 21.2vw;
+    font-size: 200px;
     text-align: center;
     position: absolute;
-    top: 20%;
-    z-index: 2;
-    /* position: relative; */
+    top: 5%;
     z-index: 1;
+    line-height: unset;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -1761,7 +1810,7 @@ aside li {
 
 /* ========= Facility section ========= */
 
-#facility {
+/* #facility {
     padding: 100px 0px 0px 0px;
     background-color: #2A2D2C;
     background: url("../images/bg/ThreeSection-bg.webp");
@@ -1845,7 +1894,7 @@ aside li {
 
 #facility .logoipsum div img {
     width: 175px;
-}
+} */
 
 /* #facility .about_facility{
     bottom: 560px;
@@ -1855,7 +1904,7 @@ aside li {
 
 /* ========= Offer section ========= */
 
-#Offer {
+/* #Offer {
     background: #fff;
     padding: 100px 0px;
 }
@@ -1898,13 +1947,13 @@ aside li {
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
-}
+} */
 
 /* ========= Offer section ========= */
 
 /* ========= Gallery section ========= */
 
-#Gallery {
+/* #Gallery {
     background-color: #fff;
     padding-bottom: 100px;
     position: relative;
@@ -1980,7 +2029,7 @@ aside li {
     color: #212322;
     position: relative;
     top: 4px;
-}
+} */
 
 /* ========= Gallery section ========= */
 
@@ -2004,8 +2053,7 @@ aside li {
 }
 
 #Questions img {
-    width: 100%;
-    clip-path: circle(50%);
+    width: 550px;
 }
 
 #Questions h1 {

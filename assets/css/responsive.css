@@ -26,7 +26,7 @@
         padding-left: 0px;
     }
     #Optimization .big-h1 h1 {
-        font-size: 21.4vw;
+        font-size: 170px;
     }
     #Testimonials .col-lg-8 {
         width: 63%;
@@ -94,8 +94,9 @@
 @media all and (min-width: 1440px) {
     /* ======== index.html ======== */
     #Optimization .big-h1 h1 {
-        -webkit-text-stroke-width: 4px;
-        font-size: 21.4vw;
+        -webkit-text-stroke-width: 2px;
+        font-size: 200px;
+        line-height: 200px;
         left: 0%;
     }
 }

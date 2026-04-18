@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <!-- animation of css -->
     <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- glightbox of css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
 
 <body>
@@ -42,35 +44,22 @@
                         </button>
                         <!-- navigation bar manu  -->
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                            <ul
-                                class="navbar-nav d-flex justify-content-center align-items-center gap-lg-4 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+                            <ul class="navbar-nav d-flex justify-content-center align-items-center gap-lg-4 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link active" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                    <a href="#about" class="nav-link">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="pricing.html">Pricing</a>
+                                    <a href="#Plan" class="nav-link">Pricing</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About</a>
+                                    <a href="#portfolio" class="nav-link">Portfolio</a>
                                 </li>
-                                <li class="dropdown">
-                                    <a class="nav-link" href="#">Pages <i
-                                            class="fa-sharp fa-solid fa-sort-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="services.html">Services</a></li>
-                                        <li><a class="dropdown-item" href="our_Blog.html">Our Blog</a></li>
-                                        <li><a class="dropdown-item" href="blog_Detail.html">Blog Detail</a></li>
-                                        <li><a class="dropdown-item" href="team.html">Team</a></li>
-                                        <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
-                                        <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-                                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-                                        <li><a class="dropdown-item" href="404.html">404</a></li>
-                                        <li><a class="dropdown-item" href="coming.html">Coming Soon</a></li>
-                                    </ul>
-                                </li>
+                                <li class="nav-item">
+                                    <a href="#Talk" class="nav-link">Contact Us</a>
+                                </li>                                
                             </ul>
                         </div>
                         <button class="join-btn hover1" type="button">Get Started</button>
@@ -80,8 +69,7 @@
                 <aside>
                     <div id="mySidenav" class="right-sidbar">
                         <div class="side-nav-logo d-flex justify-content-between align-items-center ps-2 pe-1 nav-logo">
-                            <figure class="navbar-brand"><a href="index.html"><img src="assets/images/icon2.png"
-                                        alt="img" class=""></a></figure>
+                            <figure class="navbar-brand"><a href="index.html"><img src="assets/images/icon2.png" alt="img" class=""></a></figure>
                             <button class="fa-solid fa-xmark" onclick="close_aside()" title="Aside"> </button>
                         </div>
                         <ul>
@@ -89,32 +77,16 @@
                                 <a aria-current="page" class="active" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="about.html">About</a>
+                                <a href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="pricing.html">Pricing</a>
+                                <a href="#Plan">Pricing</a>
                             </li>
                             <li class="nav-item">
-                                <a href="services.html">Services</a>
+                                <a href="#portfolio">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <div class="d-flex align-items-center justify-content-between " id="slid-btn">
-                                    <button class="a-slid page-btn">Pages</button>
-                                    <i class="fa-solid fa-caret-down pe-2"></i>
-                                </div>
-                                <ul id="slid-drop">
-                                    <li><a href="blog_Detail.html">Blog Detail</a></li>
-                                    <li><a href="our_Blog.html">Our Blog</a></li>
-                                    <li><a href="team.html">Team</a></li>
-                                    <li><a href="testimonials.html">Testimonials</a></li>
-                                    <li><a href="faq.html">FAQs</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="404.html">404</a></li>
-                                    <li><a href="coming.html">Coming Soon</a></li>
-                                </ul>
+                                <a href="#Talk">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -151,50 +123,11 @@
                     </div>
                 </div>
             </section>
-            <!-- ======== hero section ========  -->            
-
-            <!-- ======== Rating section ========  -->
-            <!-- <section id="rating">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 d-flex">
-                            <div class="d-flex align-items-center justify-content-center flex-column">
-                                <div class="d-flex">
-                                    <h1>+</h1>
-                                    <h1>150</h1>
-                                    <h1>%</h1>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 d-flex">
-                            <div class="d-flex align-items-center justify-content-center flex-column">
-                                <div class="d-flex">
-                                    <h1>+</h1>
-                                    <h1>87</h1>
-                                    <h1>K</h1>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 d-flex">
-                            <div class="d-flex align-items-center justify-content-center flex-column">
-                                <div class="d-flex">
-                                    <h1>+</h1>
-                                    <h1>20</h1>
-                                    <h1>M</h1>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- ======== Rating section ========  -->
+            <!-- ======== hero section ========  --> 
         </div>
 
         <!-- ======== Problem section Start ========  -->
-        <section class="problem-section">
+        <section class="problem-section" id="about">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Left Content -->
@@ -236,7 +169,7 @@
 
                     <!-- Right Image -->
                     <div class="col-lg-6 text-center" data-aos="fade-left">
-                        <img src="./assets/images/about-5.webp" 
+                        <img src="./assets/images/img/solution.jpeg" 
                             alt="Digital Marketing Problems" 
                             class="img-fluid problem-img">
                     </div>
@@ -600,41 +533,51 @@
         <!-- ========= Pricing section End =========== -->
         
         <!-- ========= Demo Work Section Start =========== -->
-        <section class="demo-section">
+        <section class="demo-section" id="portfolio">
             <div class="container">
                 <!-- Heading -->
                 <div class="text-center mb-5">
                     <h2 class="fw-bold">See How We Improve Your Presence</h2>
-                    <p class="text-muted mt-3">
+                    <p class="text-muted mt-2">
                         Real examples of how we transform business profiles and content.
                     </p>
                 </div>
                 <div class="row g-4">
-                    <!-- BEFORE / AFTER -->
+                    <!-- BEFORE / AFTER INSTAGRAM -->
                     <div class="col-lg-4 col-md-6">
                         <div class="demo-card">
                             <h5>Before / After Instagram</h5>
                             <div class="before-after-img">
-                                <div>
+                                <!-- Before -->
+                                <div class="img-box">
                                     <span class="tag">Before</span>
-                                    <img src="./assets/images/insta.png" class="img-fluid" alt="">
+                                    <a href="./assets/images/img/instagram Before.png" class="glightbox" data-gallery="insta">
+                                        <img src="./assets/images/img/instagram Before.png" alt="Instagram Befor SEO">
+                                        <div class="overlay">View</div>
+                                    </a>
                                 </div>
-                                <div>
+                                <!-- After -->
+                                <div class="img-box">
                                     <span class="tag after">After</span>
-                                    <img src="./assets/images/insta.png" class="img-fluid" alt="">
+                                    <a href="./assets/images/img/instagram After.png" class="glightbox" data-gallery="insta">
+                                        <img src="./assets/images/img/instagram After.png" alt="Instagram After SEO">
+                                        <div class="overlay">View</div>
+                                    </a>
                                 </div>
+
                             </div>
                         </div>
                     </div>
-                    <!-- SAMPLE REELS -->
+                    <!-- SAMPLE VIDEO -->
                     <div class="col-lg-4 col-md-6">
                         <div class="demo-card text-center">
                             <h5>Sample Reels</h5>
 
                             <div class="video-box">
-                                <video controls>
+                                <video poster="assets/images/img/video-thumb.jpg">
                                     <source src="assets/videos/sample.mp4" type="video/mp4">
                                 </video>
+                                <div class="play-btn">▶</div>
                             </div>
                         </div>
                     </div>
@@ -643,13 +586,19 @@
                         <div class="demo-card">
                             <h5>Google Profile Improvements</h5>
                             <div class="before-after-img">
-                                <div>
+                                <div class="img-box">
                                     <span class="tag">Before</span>
-                                    <img src="./assets/images/insta.png" class="img-fluid" alt="">
+                                    <a href="./assets/images/img/GMB Before.png" class="glightbox" data-gallery="gmb">
+                                        <img src="./assets/images/img/GMB Before.png" alt="Before Google Optimization">
+                                        <div class="overlay">View</div>
+                                    </a>
                                 </div>
-                                <div>
+                                <div class="img-box">
                                     <span class="tag after">After</span>
-                                    <img src="./assets/images/insta.png" class="img-fluid" alt="">
+                                    <a href="./assets/images/img/GMB After.png" class="glightbox" data-gallery="gmb">
+                                        <img src="./assets/images/img/GMB After.png" alt="After Google Optimization">
+                                        <div class="overlay">View</div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -733,7 +682,7 @@
                         <div class="Exp-image d-flex align-items-center justify-content-center">
                             <figure>
                                 <h1>Why Choose Us</h1>
-                                <img src="assets/images/index/Experiences_girl.webp" alt="Why Choose Us">
+                                <img src="assets/images/index/Why choose us.png" alt="Why Choose Us">
                             </figure>
                         </div>
                     </div>
@@ -744,7 +693,7 @@
         <!-- ========= Why Choose Us Section End =========== -->
 
         <!-- ======== Facility section Start ========  -->
-        <section id="facility">
+        <!-- <section id="facility">
             <div class="container position-relative">
                 <div class="row">
                     <div class="col-lg-7 col-md-7">
@@ -784,13 +733,13 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- ======== Facility section End ========  -->
 
         <!-- ======== Marketing section Start ========  -->
          <section id="Optimization">
             <div class="big-h1 d-flex align-items-center justify-content-center">
-                <h1>MARKITING</h1>
+                <h1>LOCAL BUSINESS GROWTH</h1>
             </div>
             <div class="container">
                 <div class="row position-relative">
@@ -799,7 +748,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-12 d-flex">
                         <div class="d-flex align-items-end">
-                            <figure><img src="assets/images/index/seo_girl.webp" alt="Image"></figure>
+                            <figure><img src="assets/images/index/seo_img.png" alt="Image"></figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-12 d-flex" data-aos="fade-up">
@@ -814,7 +763,7 @@
         <!-- ======== Marketing section End ========  -->
 
         <!-- ======== Offer section Start ========  -->
-        <section id="Offer">
+        <!-- <section id="Offer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6" data-aos="fade-down">
@@ -861,11 +810,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- ======== Offer section Start ========  -->
         
         <!-- ========= Gallery section Start =========== -->
-        <section id="Gallery">
+        <!-- <section id="Gallery">
             <div class="container">
                 <div class="row d-flex gap-lg-0 gap-md-0 gap-sm-4 gap-2">
                     <hr>
@@ -884,7 +833,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- ========= Gallery section End =========== -->
 
         <!-- ========= Questions section Start =========== -->
@@ -1000,9 +949,8 @@
                     <div class="col-lg-6 col-md-6 d-flex justify-content-center" data-aos="fade-down">
                         <div class="position-relative d-flex align-items-center justify-content-center">
                             <figure>
-                                <img src="assets/images/index/faq.webp" alt="FAQ">
+                                <img src="assets/images/index/FAQ.png" alt="FAQ">
                             </figure>
-                            <h1>FAQ</h1>
                         </div>
                     </div>
 
@@ -1128,6 +1076,35 @@
         integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
         data-cf-beacon='{"version":"2024.11.0","token":"afef85246d6f4aa98a1a0a5c34b94c75","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
         crossorigin="anonymous"></script>
+    <!-- glightbox of js -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox'
+        });
+    </script>
+    <script>
+        document.querySelectorAll('.nav-item a[href^="#"]').forEach(link => {
+            link.addEventListener("click", function (e) {
+
+                const targetId = this.getAttribute("href").substring(1);
+                const target = document.getElementById(targetId);
+
+                // If target section exists → handle smooth scroll
+                if (target) {
+                    e.preventDefault();
+
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+
+                    // Remove # from URL (clean URL)
+                    history.replaceState(null, null, window.location.pathname);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
