@@ -818,12 +818,6 @@
         text-align: center;
         gap: 20px;
     }
-    #hero p {
-        color: #fff;
-    }
-    #hero h4 {
-        color: #fff;
-    }
     #hero .col-lg-8 .hero-content {
         width: 100%;
         position: unset;
