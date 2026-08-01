@@ -689,7 +689,7 @@ span {
 
 #ThreeSections-bg {
     position: relative;
-    background: url("../images/bg/ThreeSection-bg.webp");
+    /* background: url("../images/bg/ThreeSection-bg.webp"); */
     background-color: #ffffff;
     background-blend-mode: difference;
 }
@@ -2036,7 +2036,7 @@ aside li {
 /* ========= Questions section =========== */
 
 #Questions {
-    background: #212322;
+    background: #fff;
 }
 
 #Questions .container {
@@ -2121,9 +2121,9 @@ aside li {
 }
 
 #Questions .accordion-item {
-    border-bottom: 1px solid #ADB0B4;
+    border: none;
     margin-bottom: 30px;
-    background-color: #212322;
+    background-color: #fff  ;
     padding: 5px;
 }
 
@@ -2151,11 +2151,11 @@ aside li {
 /* ======== Talk section ======== */
 
 #Talk {
-    background: #212322;
+    background: #fff;
 }
 
 #Talk .row {
-    background-color: #fff;
+    background-color: #fffff9;
     padding: 80px 60px 60px 60px;
     border-radius: 30px;
     position: relative;
