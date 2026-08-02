@@ -2,6 +2,10 @@
 <html lang="zxx">
 
 <head>
+    <script>
+        // Lock scrolling immediately so there's no flash of scrollable content behind the loader
+        document.documentElement.classList.add('is-loading');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,6 +33,13 @@
 </head>
 
 <body>
+    <!-- ======== preloader ======== -->
+    <div id="page-loader">
+        <div class="loader-inner">
+            <img src="assets/images/mainLogo.png" alt="Marketi-verse" class="loader-logo">
+            <span class="loader-spinner"></span>
+        </div>
+    </div>
     <div class="site-wrapper">
         <div id="ThreeSections-bg">
             <!-- ======== header section ======== -->
@@ -891,12 +902,7 @@
     <script src="assets/js/custom.js"></script>
     <!-- animation from javascript -->
     <script src="assets/js/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true,
-            duration: 1500,
-        });
-    </script>
+    <!-- AOS.init() is now triggered from custom.js once the page loader finishes -->
     <script defer
         src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516"
         integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="

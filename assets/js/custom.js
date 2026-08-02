@@ -1,3 +1,61 @@
+// ========= Page preloader: wait for every image to load, then reveal the page & start AOS =========
+(function pageLoader() {
+    "use strict";
+
+    const loader = document.getElementById("page-loader");
+    const images = Array.from(document.images); // all <img> elements currently in the DOM
+    let loadedCount = 0;
+    const totalCount = images.length;
+    let finished = false;
+
+    function finishLoading() {
+        if (finished) return;
+        finished = true;
+
+        document.documentElement.classList.remove("is-loading");
+
+        if (loader) {
+            loader.classList.add("loader-hidden");
+            // Remove the loader from the DOM once its fade-out transition ends
+            loader.addEventListener("transitionend", () => loader.remove(), { once: true });
+        }
+
+        // Start AOS only after the loader is gone, so animations trigger correctly
+        if (typeof AOS !== "undefined") {
+            AOS.init({
+                once: true,
+                duration: 1500,
+            });
+        }
+    }
+
+    function markOneLoaded() {
+        loadedCount++;
+        if (loadedCount >= totalCount) {
+            finishLoading();
+        }
+    }
+
+    if (totalCount === 0) {
+        // No images on the page — nothing to wait for
+        finishLoading();
+    } else {
+        images.forEach((img) => {
+            if (img.complete) {
+                // Already loaded (e.g. cached)
+                markOneLoaded();
+            } else {
+                img.addEventListener("load", markOneLoaded, { once: true });
+                img.addEventListener("error", markOneLoaded, { once: true }); // don't let a broken image hang the loader
+            }
+        });
+    }
+
+    // Safety net: never let the loader stay up forever (e.g. a very slow/stalled image)
+    window.setTimeout(finishLoading, 8000);
+})();
+
+
 // right-sidebar
 function open_aside() {
     "use strict";
