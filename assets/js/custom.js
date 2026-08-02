@@ -20,9 +20,11 @@ function close_aside() {
 }
 
 let slid = document.getElementById("slid-btn");
-slid.onclick = () => {
-    let dropdwon = document.getElementById("slid-drop");
-    dropdwon.classList.toggle("aside-dropdwon");
+if (slid) {
+    slid.onclick = () => {
+        let dropdwon = document.getElementById("slid-drop");
+        dropdwon.classList.toggle("aside-dropdwon");
+    }
 }
 
 
@@ -87,7 +89,9 @@ planhover.forEach((hoverplan) => {
     hoverplan.addEventListener('mouseleave', () => {
         hoverplan.classList.remove('plan-hover')
         AtivePlan = document.getElementById("hhh")
-        AtivePlan.classList.add('plan-hover')
+        if (AtivePlan) {
+            AtivePlan.classList.add('plan-hover')
+        }
     });
 });
 
