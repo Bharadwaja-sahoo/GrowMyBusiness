@@ -2,10 +2,6 @@
 <html lang="zxx">
 
 <head>
-    <script>
-        // Lock scrolling immediately so there's no flash of scrollable content behind the loader
-        document.documentElement.classList.add('is-loading');
-    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,12 +30,12 @@
 
 <body>
     <!-- ======== preloader ======== -->
-    <div id="page-loader">
+    <!-- <div id="page-loader">
         <div class="loader-inner">
             <img src="assets/images/mainLogo.png" alt="Marketi-verse" class="loader-logo">
             <span class="loader-spinner"></span>
         </div>
-    </div>
+    </div> -->
     <div class="site-wrapper">
         <div id="ThreeSections-bg">
             <!-- ======== header section ======== -->
@@ -131,7 +127,7 @@
                         <div class="col-lg-6" data-aos="fade-left">
                             <div class="hero-image-wrap">
                                 <div class="hero-image-glow"></div>
-                                <img src="./assets/images/img/Hero Image.png" alt="hero landing page image" class="hero-image"/>
+                                <img src="./assets/images/img/Hero Image.webp" alt="hero landing page image" class="hero-image"/>
                                 <div class="hero-badge">
                                     <i class="bi bi-patch-check-fill"></i>
                                     <span>Trusted by Local Businesses</span>
@@ -187,7 +183,7 @@
 
                     <!-- Right Image -->
                     <div class="col-lg-6 text-center" data-aos="fade-left">
-                        <img src="./assets/images/img/problem.png" 
+                        <img src="./assets/images/img/problem.webp" 
                             alt="Digital Marketing Problems" 
                             class="img-fluid problem-img">
                     </div>
@@ -205,7 +201,7 @@
                     <!-- Left Image -->
                     <div class="col-lg-6" data-aos="fade-right">
                         <div class="solution-image">
-                            <img src="./assets/images/img/solution.png" alt="GrowthMate Solution">
+                            <img src="./assets/images/img/solution.webp" alt="GrowthMate Solution">
                         </div>
                     </div>
 
@@ -517,16 +513,16 @@
                                 <!-- Before -->
                                 <div class="img-box">
                                     <span class="tag">Before</span>
-                                    <a href="./assets/images/img/instagram Before.png" class="glightbox" data-gallery="insta">
-                                        <img src="./assets/images/img/instagram Before.png" alt="Instagram Befor SEO">
+                                    <a href="./assets/images/img/instagram Before.webp" class="glightbox" data-gallery="insta">
+                                        <img src="./assets/images/img/instagram Before.webp" alt="Instagram Befor SEO">
                                         <div class="overlay">View</div>
                                     </a>
                                 </div>
                                 <!-- After -->
                                 <div class="img-box">
                                     <span class="tag after">After</span>
-                                    <a href="./assets/images/img/instagram After.png" class="glightbox" data-gallery="insta">
-                                        <img src="./assets/images/img/instagram After.png" alt="Instagram After SEO">
+                                    <a href="./assets/images/img/instagram After.webp" class="glightbox" data-gallery="insta">
+                                        <img src="./assets/images/img/instagram After.webp" alt="Instagram After SEO">
                                         <div class="overlay">View</div>
                                     </a>
                                 </div>
@@ -554,15 +550,15 @@
                             <div class="before-after-img">
                                 <div class="img-box">
                                     <span class="tag">Before</span>
-                                    <a href="./assets/images/img/GMB Before.png" class="glightbox" data-gallery="gmb">
-                                        <img src="./assets/images/img/GMB Before.png" alt="Before Google Optimization">
+                                    <a href="./assets/images/img/GMB Before.webp" class="glightbox" data-gallery="gmb">
+                                        <img src="./assets/images/img/GMB Before.webp" alt="Before Google Optimization">
                                         <div class="overlay">View</div>
                                     </a>
                                 </div>
                                 <div class="img-box">
                                     <span class="tag after">After</span>
-                                    <a href="./assets/images/img/GMB After.png" class="glightbox" data-gallery="gmb">
-                                        <img src="./assets/images/img/GMB After.png" alt="After Google Optimization">
+                                    <a href="./assets/images/img/GMB After.webp" class="glightbox" data-gallery="gmb">
+                                        <img src="./assets/images/img/GMB After.webp" alt="After Google Optimization">
                                         <div class="overlay">View</div>
                                     </a>
                                 </div>
@@ -658,8 +654,8 @@
         <!-- ======== Marketing section Start ========  -->
          <section>
             <div>
-                <img src="./assets/images/img/MarketingPC.png" alt="" id="marketingImg1">
-                <img src="./assets/images/img/MarketingMobile.png" alt="" id="marketingImg2">
+                <img src="./assets/images/img/MarketingPC.webp" alt="" id="marketingImg1">
+                <img src="./assets/images/img/MarketingMobile.webp" alt="" id="marketingImg2">
             </div>
          </section>         
         <!-- ======== Marketing section End ========  -->
@@ -902,7 +898,12 @@
     <script src="assets/js/custom.js"></script>
     <!-- animation from javascript -->
     <script src="assets/js/aos.js"></script>
-    <!-- AOS.init() is now triggered from custom.js once the page loader finishes -->
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+    </script>
     <script defer
         src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516"
         integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="

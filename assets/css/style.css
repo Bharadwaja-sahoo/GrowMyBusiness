@@ -1214,6 +1214,7 @@ aside li {
     background-color: #2A2D2C;
     background: url("../images/bg/ThreeSection-bg.webp");
     position: relative;
+    overflow: hidden;
 }
 
 .problem-section .section-subtitle {
@@ -1290,6 +1291,7 @@ Solution Section
 .solution-section{
     padding: 100px 0;
     background: #fff;
+    overflow: hidden;
 }
 
 .solution-image img{
@@ -1830,6 +1832,7 @@ Solution Section
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: 0% 0%;;
     }
 
     /* On touch devices there's no hover, so keep a faint overlay visible as a hint */
