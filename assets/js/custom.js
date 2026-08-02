@@ -98,17 +98,48 @@ planhover.forEach((hoverplan) => {
 
 
 // 1.14. Talk section ===  form Submit massage
+// PASTE your Google Apps Script Web App URL here (see setup guide provided with these files)
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwdFkLzaXCet8dsdR0ejGHXFtpY6hz1VhR_aGNGx2Y3LdIEyvyRBjy4doAKaAjjSZIGQw/exec";
+
 const aboutFor = document.getElementById('Subscribe-massage');
 const aboutMessag = document.getElementById('Succes-box');
 if (aboutFor !== null) {
     aboutFor.addEventListener('submit', (event) => {
         event.preventDefault();
-        aboutMessag.innerHTML = 'Form Submit Successfully!';
-        aboutMessag.style.display = 'block';
-        aboutFor.reset();
-        setTimeout(() => {
-            aboutMessag.style.display = 'none';
-        }, 3000);
+
+        const submitBtn = aboutFor.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn ? submitBtn.innerHTML : '';
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Sending...';
+        }
+
+        const formData = new FormData(aboutFor);
+
+        fetch(GOOGLE_SCRIPT_URL, {
+            method: 'POST',
+            body: formData,
+            mode: 'no-cors' // Apps Script doesn't send CORS headers back; no-cors lets the request through
+        })
+            .then(() => {
+                aboutMessag.innerHTML = 'Form Submit Successfully!';
+                aboutMessag.style.display = 'block';
+                aboutFor.reset();
+            })
+            .catch((error) => {
+                console.error('Error submitting form:', error);
+                aboutMessag.innerHTML = 'Something went wrong. Please call us instead.';
+                aboutMessag.style.display = 'block';
+            })
+            .finally(() => {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnText;
+                }
+                setTimeout(() => {
+                    aboutMessag.style.display = 'none';
+                }, 3500);
+            });
     });
 }
 
@@ -128,6 +159,32 @@ if (aboutFor2 !== null) {
     });
 }
 
+
+
+// Instagram-style swipe dots for the Before/After image carousels (mobile)
+document.querySelectorAll('.before-after-img').forEach((track) => {
+    const boxes = track.querySelectorAll('.img-box');
+    if (boxes.length < 2) return;
+
+    const dotsWrap = document.createElement('div');
+    dotsWrap.className = 'swipe-dots';
+    boxes.forEach((_, i) => {
+        const dot = document.createElement('span');
+        if (i === 0) dot.classList.add('active');
+        dotsWrap.appendChild(dot);
+    });
+    track.insertAdjacentElement('afterend', dotsWrap);
+
+    const dots = dotsWrap.querySelectorAll('span');
+    let scrollTimeout;
+    track.addEventListener('scroll', () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+            const index = Math.round(track.scrollLeft / track.clientWidth);
+            dots.forEach((d, i) => d.classList.toggle('active', i === index));
+        }, 50);
+    }, { passive: true });
+});
 
 
 // hover animation of > 1.5. Case-Study section

@@ -117,9 +117,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6" data-aos="fade-left" style="display: flex; justify-content: center;">
-                            <div style="width: 500px; height: 500px;">
-                                <img src="./assets/images/img/Hero Image.png" alt="hero landing page image" class="img-fluid" style="width: 100%;height: 100%;border-radius: 50%;object-fit: cover;object-position: 75%;border: 2px solid #fff;box-shadow: 0px 0px 50px gray;"/>
+                        <div class="col-lg-6" data-aos="fade-left">
+                            <div class="hero-image-wrap">
+                                <div class="hero-image-glow"></div>
+                                <img src="./assets/images/img/Hero Image.png" alt="hero landing page image" class="hero-image"/>
+                                <div class="hero-badge">
+                                    <i class="bi bi-patch-check-fill"></i>
+                                    <span>Trusted by Local Businesses</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1005,7 +1010,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div>
-                            <form id="Subscribe-massage" onsubmit="submitContact();">
+                            <form id="Subscribe-massage">
                                 <div class="d-flex flex-column gap-4">
                                     <div class="d-flex gap-lg-3 gap-md-3 gap-4 flex-lg-row flex-md-row flex-column">
                                         <input type="text" name="name" id="name" autocomplete="off"
@@ -1129,90 +1134,6 @@
                 }
             });
         });
-    </script>
-    <script>
-        const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbz8fxLuHC1EX3P4eDDfrbYfnlCKArgnWkDXTiKaHD25v55cY7PnxsZyqacJgmZk7V-E/exec";
-
-        function submitContact() {
-            const form = document.getElementById('Subscribe-massage');
-            const name = document.getElementById('name');
-            const serviceType = document.getElementById('serviceType');
-            const email = document.getElementById('email');
-            const number = document.getElementById('number');
-            const message = document.getElementById('message');
-
-            // FIELD-BY-FIELD VALIDATION
-            if (name.value.trim() === "") {
-                Swal.fire("Alert", "Please provide your Full Name", "warning");
-                return false;
-            }
-
-            if (serviceType.value.trim() === "") {
-                Swal.fire("Alert", "Please Select A Service Type", "warning");
-                return false;
-            }
-
-            if (email.value.trim() === "") {
-                Swal.fire("Alert", "Please provide your Email Address", "warning");
-                return false;
-            }
-
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailPattern.test(email.value.trim())) {
-                Swal.fire("Alert", "Please provide a valid Email Address", "warning");
-                return false;
-            }
-
-            if (number.value.trim() === "") {
-                Swal.fire("Alert", "Please provide the Number", "warning");
-                return false;
-            }
-
-            if (message.value.trim() === "") {
-                Swal.fire("Alert", "Please write your Message", "warning");
-                return false;
-            }
-
-            // SUBMIT TO GOOGLE SHEETS
-            const formData = {
-                name: name.value.trim(),
-                email: email.value.trim(),
-                serviceType: serviceType.value.trim(),
-                message: message.value.trim(),
-                number: number.value.trim()
-            };
-
-            // LOADING ALERT
-            Swal.fire({
-                title: "Submitting...",
-                text: "Please wait",
-                allowOutsideClick: false,
-                didOpen: () => {
-                    Swal.showLoading();
-                }
-            });
-
-            fetch(GOOGLE_SHEET_URL, {
-                method: 'POST',
-                body: JSON.stringify(formData),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-                .then(res => res.json())
-                .then(data => {
-                    if (data.status === "success") {
-                        Swal.fire("Success", "Your message has been sent!", "success");
-                        form.reset();
-                    } else {
-                        Swal.fire("Error", "Something went wrong. Please try again.", "error");
-                    }
-                })
-                .catch(err => {
-                    Swal.fire("Error", "Cannot connect to Google Sheets.", "error");
-                    console.error(err);
-                });
-        }
     </script>
 </body>
 

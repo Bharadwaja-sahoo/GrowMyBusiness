@@ -831,7 +831,7 @@ aside li {
   padding: 40px 0 50px;
   position: relative;
   overflow: hidden;
-  /* background: linear-gradient(135deg, var(--background-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%); */
+  background: linear-gradient(135deg, var(--background-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
 }
 
 .hero::before {
@@ -841,7 +841,7 @@ aside li {
   left: -10%;
   width: 50%;
   height: 100%;
-  /* background: radial-gradient(circle, color-mix(in srgb, var(--accent-color), transparent 92%) 0%, transparent 70%); */
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent-color), transparent 92%) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -852,8 +852,96 @@ aside li {
   right: -5%;
   width: 40%;
   height: 80%;
-  /* background: radial-gradient(circle, color-mix(in srgb, var(--accent-color), transparent 94%) 0%, transparent 60%); */
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent-color), transparent 94%) 0%, transparent 60%);
   pointer-events: none;
+}
+
+/* Hero image — responsive circle, scales with viewport instead of a fixed 500px box */
+.hero-image-wrap {
+  position: relative;
+  width: clamp(220px, 65vw, 460px);
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+}
+
+.hero-image-glow {
+  position: absolute;
+  inset: -18px;
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent-color), transparent 65%) 0%, transparent 72%);
+  border-radius: 50%;
+  z-index: 0;
+  filter: blur(6px);
+}
+
+.hero-image {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 75%;
+  border: 4px solid #fff;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.25);
+}
+
+.hero-badge {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  padding: 10px 18px;
+  border-radius: 50px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  white-space: nowrap;
+}
+
+.hero-badge i {
+  color: var(--accent-color);
+}
+
+@media (max-width: 991px) {
+  .hero {
+    padding: 32px 0 40px;
+    text-align: center;
+  }
+
+  .hero .hero-content {
+    text-align: center;
+  }
+
+  .hero .hero-content .hero-tag {
+    justify-content: center;
+  }
+
+  .hero .hero-content .hero-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero .hero-content .hero-cta {
+    justify-content: center;
+  }
+
+  .hero-image-wrap {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-badge {
+    font-size: 0.7rem;
+    padding: 8px 14px;
+  }
 }
 
 .hero .hero-content {
@@ -1713,11 +1801,74 @@ Solution Section
     cursor: pointer;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* Responsive — Instagram-style swipeable before/after on mobile */
+@media (max-width: 767px) {
     .before-after-img {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 0;
+        border-radius: 14px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
     }
+
+    .before-after-img::-webkit-scrollbar {
+        display: none;
+    }
+
+    .before-after-img .img-box {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+        aspect-ratio: 4 / 5;
+        border-radius: 0;
+    }
+
+    .before-after-img .img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* On touch devices there's no hover, so keep a faint overlay visible as a hint */
+    .before-after-img .img-box .overlay {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .before-after-img .img-box .overlay {
+        font-size: 0;
+    }
+}
+
+.swipe-dots {
+    display: none;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+@media (max-width: 767px) {
+    .swipe-dots {
+        display: flex;
+    }
+}
+
+.swipe-dots span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #d0d5dd;
+    transition: 0.25s ease;
+}
+
+.swipe-dots span.active {
+    background: var(--accent-color);
+    width: 20px;
+    border-radius: 4px;
 }
 
 /* ========= Demo Work Section ========= */
