@@ -103,7 +103,7 @@ planhover.forEach((hoverplan) => {
 
 // 1.14. Talk section ===  form Submit massage
 // PASTE your Google Apps Script Web App URL here (see setup guide provided with these files)
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwdFkLzaXCet8dsdR0ejGHXFtpY6hz1VhR_aGNGx2Y3LdIEyvyRBjy4doAKaAjjSZIGQw/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyoaIfnvh2cB3xqTufZPzaeoBObE0SdNsqDxH7CBYYa_RNAwK5j-6DDtOiY97WxAesYgg/exec";
 
 const aboutFor = document.getElementById('Subscribe-massage');
 const aboutMessag = document.getElementById('Succes-box');
