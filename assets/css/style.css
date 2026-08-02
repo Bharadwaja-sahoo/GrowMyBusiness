@@ -828,10 +828,9 @@ aside li {
 /* ========= hero section ========= */
 
 .hero {
-  padding: 40px 0 50px;
+  padding: 40px 0 85px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--background-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
 }
 
 .hero::before {
@@ -3373,6 +3372,10 @@ footer i:hover {
 }
 
 @media all and (max-width: 767px) {
+    #hero .row > div:first-child {
+        order: 1;
+    }
+
     #marketingImg1 {
         display: none;
     }
@@ -3382,3 +3385,5 @@ footer i:hover {
 }
 
 /* ======== End of 13.1 coming section ======== */
+
+
