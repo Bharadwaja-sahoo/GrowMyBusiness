@@ -440,7 +440,7 @@
                             </div>
                             <div class="d-flex flex-column gap-lg-3 gap-3">
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <h2>₹6500</h2>
+                                    <h2>₹5,999</h2>
                                     <h5 class="pt-lg-2 pt-md-2 pt-1">/Month</h5>
                                 </div>
                             </div>
@@ -471,7 +471,7 @@
                             </div>
                             <div class="d-flex flex-column gap-lg-3 gap-3">
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <h2>₹9,500</h2>
+                                    <h2>₹9,999</h2>
                                     <h5 class="pt-lg-2 pt-md-2 pt-1">/Month</h5>
                                 </div>
                             </div>
@@ -502,7 +502,7 @@
                             </div>
                             <div class="d-flex flex-column gap-lg-3 gap-3">
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <h2>₹14,500</h2>
+                                    <h2>₹14,999</h2>
                                     <h5 class="pt-lg-2 pt-md-2 pt-1">/Month</h5>
                                 </div>
                             </div>
@@ -1010,12 +1010,24 @@
                                     <div class="d-flex gap-lg-3 gap-md-3 gap-4 flex-lg-row flex-md-row flex-column">
                                         <input type="text" name="name" id="name" autocomplete="off"
                                             placeholder="Your Name" required>
+                                        <select name="serviceType" id="serviceType" required>
+                                            <option value="" selected disabled hidden>Select a Service Type</option>
+                                            <option value="Salon">Salon</option>
+                                            <option value="Gym">Gym</option>
+                                            <option value="Clinic">Clinic</option>
+                                            <option value="Cafe">Cafe</option>
+                                            <option value="Spa">Spa</option>
+                                            <option value="Education">Education</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex gap-lg-3 gap-md-3 gap-4 flex-lg-row flex-md-row flex-column">
                                         <input type="email" name="email" id="email" autocomplete="off"
                                             placeholder="Email Address" required>
-                                    </div>
-                                    <div class="d-flex flex-column gap-lg-4 gap-md-4 gap-3">
                                         <input type="number" name="number" id="number" autocomplete="off"
                                             placeholder="Phone Number" required>
+                                    </div>
+                                    <div class="d-flex flex-column gap-lg-4 gap-md-4 gap-3">                                        
                                         <textarea class="col-md-11 col-12" name="massage" id="massage" cols="30"
                                             rows="8" placeholder="Write here message"></textarea>
                                     </div>

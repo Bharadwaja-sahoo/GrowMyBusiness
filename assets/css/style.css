@@ -1243,6 +1243,7 @@ Solution Section
 
 .solution-heading p{
     color:#00000096;
+    margin-top:20px;
     margin-bottom:20px;
 }
 
@@ -1408,7 +1409,7 @@ Solution Section
 
 /* Box */
 .service-box {
-    background: #fff7e1;
+    background: #fffff9;
     padding: 25px;
     border-radius: 12px;
     height: 100%;
@@ -1502,7 +1503,7 @@ Solution Section
 }
 
 #Plan .plan-Card {
-    background-color: #FFF7E1;
+    background-color: #fffff9;
     padding: 35px 30px;
     border-radius: 24px;
     box-shadow: 0px 0px 20px #00000057;
@@ -2218,6 +2219,7 @@ Solution Section
 /* ======== Talk section ======== */
 
 #Talk {
+    padding-top: 50px;
     background: #fff;
 }
 
@@ -2239,6 +2241,21 @@ Solution Section
     padding: 16px 20px;
     color: #212322;
     font-size: 16px;
+}
+
+#Talk select {
+    width: 100%;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--accent-color);
+    outline: none;
+    padding: 16px 20px;
+    color: #212322;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
 }
 
 #Talk textarea {
